@@ -40,16 +40,7 @@ const useStyles = makeStyles({
     textAlign: "center"
   },
 
-  appHeader: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: 'calc(10px + 2vmin)',
-    color: 'white'
-  },
-
-  headerBar: {
+  headerBarStyle: {
     padding: "50px"
   },
 
@@ -123,7 +114,7 @@ function App() {
   
   return (
     <ThemeProvider theme={theme}>
-      <HeaderBar className={classes.headerBar}/>
+      <HeaderBar className={classes.headerBarStyle}/>
 
       <Container >
         <Typography variant="h1" className={classes.headerText} gutterBottom>
