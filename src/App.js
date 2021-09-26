@@ -109,10 +109,10 @@ function App() {
   const benefitsDict = {
     monthly: [
       { name: 'Gift', total: 1, used: 0, unit: "" },
-      { name: 'Phone bill', total: 70, used: 70, unit: "$" },
+      { name: 'Phone bill', total: 1000, used: 700, unit: "$" },
     ],
     yearly: [
-      { name: 'Training', total: 3000, used: 395, unit: "$" },
+      { name: 'Training', total: 100000, used: 8000, unit: "$" },
       { name: 'Fitness', total: 500, used: 180, unit: "$" },
       { name: 'PTO Days', total: 10, used: 5, unit: "" },
     ],
