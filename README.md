@@ -1,6 +1,8 @@
 # Benefits SPA
 [![CI/CD](https://github.com/chrishart0/benefits-spa/actions/workflows/master.yaml/badge.svg)](https://github.com/chrishart0/benefits-spa/actions/workflows/master.yaml)
 
+Check it out: <http://benefits-spa.s3-website-us-east-1.amazonaws.com/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
