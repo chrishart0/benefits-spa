@@ -1,8 +1,4 @@
 import * as React from 'react';
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
@@ -13,12 +9,17 @@ import Grid from '@mui/material/Grid';
 import LinearProgress from '@mui/material/LinearProgress';
 import Box from '@mui/material/Box';
 
+// -------- Fonts --------
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 // -------- Images --------
 // import logo from 'assets/logo.svg';
 
 // -------- Components --------
 import HeaderBar from 'components/HeaderBar';
-
 
 // ------- Styles -------
 import { createTheme, ThemeProvider, } from '@mui/material/styles';
@@ -99,16 +100,17 @@ function App() {
   //Mapping data like this for such little data with such great variance of content was probably not a good idea... feel free to change how this is handled
   const benefitsDict = {
     monthly: [
-      { name: 'Gift', total: 1, used: 0, unit: "" },
-      { name: 'Phone bill', total: 1000, used: 700, unit: "$" },
+      { name: 'Gift', total: 1, used: 0, unit: "" }, // Google Forms Spreadsheet
+      { name: 'Phone bill', total: 1000, used: 700, unit: "$" }, // Expensify 
+      { name: 'Slack Channel Budget', total: 10, used: 1, unit: "" },
     ],
     yearly: [
-      { name: 'Training', total: 100000, used: 8000, unit: "$" },
-      { name: 'Fitness', total: 500, used: 180, unit: "$" },
-      { name: 'PTO Days', total: 10, used: 5, unit: "" },
+      { name: 'Training', total: 100000, used: 8000, unit: "$" }, // Expensify 
+      { name: 'Fitness', total: 500, used: 180, unit: "$" }, // Expensify 
+      { name: 'PTO Days', total: 10, used: 5, unit: "" }, // Bamboo HR
     ],
     oneOff: [
-      { name: 'Healthcare', total: 1, used: 1, unit: "" }
+      { name: 'Healthcare', total: 1, used: 1, unit: "" } // Maybe we can't use the API to find this but just link to the healthcare site
     ]
   }
   
@@ -157,7 +159,6 @@ function App() {
           
       </Grid>
     </Container>
-      
 
     </ThemeProvider>
   );
